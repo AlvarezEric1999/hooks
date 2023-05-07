@@ -35,7 +35,21 @@ export const useFetch = (url)=>{
 
     }
 
+
+
+   // Para hacer una petición a una api con fetch
+   //Usa el siguiente método
     
+    const data = async () => {
+      const req = await fetch("http://api/name")
+      const res = req.json()
+      return res;
+    }
+    // Así haces una petición a una api
+    // Att: watercubz 
+     
+
+
     useEffect(()=>{
         GetFetch();
     },[url]);
